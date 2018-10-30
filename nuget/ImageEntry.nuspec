@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata minClientVersion="2.8.1">
+    <id>Xamarin.Forms.ImageEntry</id>
+    <version>1.0.0</version>
+    <title>ImageEntry Control Plugin for Xamarin.Forms</title>
+    <authors>tbertuzzi</authors>
+    <owners>tbertuzzi</owners>
+    <licenseUrl>http://opensource.org/licenses/MS-PL<</licenseUrl>
+    <projectUrl>https://github.com/TBertuzzi/Xamarin.Forms.ImageEntry</projectUrl>
+    <iconUrl>https://github.com/TBertuzzi/Xamarin.Forms.ImageEntry/blob/master/Resources/ImageEntry.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+          Custom control for your Xamarin.Forms project to create a entry with Image.
+</description>
+<copyright>Copyright ©2018 KBits</copyright>
+    <summary>Use a ImageEntry in your Xamarin.Forms projects!</summary>
+<tags>xamarin, netstandard, xam.pcl, android, xamarin.forms, ios, image, entry, imageentry</tags>
+    <dependencies>
+         <dependency id="Xamarin.Forms" version="2.3.4.224" />
+    </dependencies>
+  </metadata>
+  <files>
+     
+      
+</files>
+</package>
