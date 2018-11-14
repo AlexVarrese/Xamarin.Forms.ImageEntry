@@ -1,3 +1,3 @@
 @echo off
-nuget pack HyperLinkPlugin.nuspec
+nuget pack ImageEntry.nuspec
 pause
