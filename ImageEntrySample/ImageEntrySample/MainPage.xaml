@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ImageEntrySample"
+             xmlns:ie="clr-namespace:Xamarin.Forms.ImageEntry;assembly=Xamarin.Forms.ImageEntry" BackgroundColor="Silver"  Padding="0,20,0,0"
+             x:Class="ImageEntrySample.MainPage">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="40" Spacing="10">
+                
+                <ie:ImageEntry TextColor="Black" 
+                        PlaceholderColor="Black" 
+                        Image="user" 
+                        Placeholder="User" 
+                        ImageAlignment="Right"
+                        HorizontalOptions="FillAndExpand"/>
+                
+               <ie:ImageEntry TextColor="Black" 
+                        PlaceholderColor="Black" 
+                        Image="password" 
+                        Placeholder="Password" 
+                        HorizontalOptions="FillAndExpand"/>
+                
+                <Button Text="Login"/>
+             </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
