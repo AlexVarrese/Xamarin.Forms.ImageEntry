@@ -35,4 +35,23 @@ iOS, in AppDelegate on FinishedLaunching start control  Xamarin.Forms.ImageEntry
    }
 ```
 
+Android in MainActivity on OnCreate start control passing the context as parameter  Xamarin.Forms.ImageEntry.ImageEntryRenderer.Init(this.BaseContext); :
+
+```csharp
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+      TabLayoutResource = Resource.Layout.Tabbar;
+      ToolbarResource = Resource.Layout.Toolbar;
+
+      base.OnCreate(savedInstanceState);
+
+      Xamarin.Forms.ImageEntry.ImageEntryRenderer.Init(this.BaseContext);
+
+      global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+      LoadApplication(new App());
+    }
+```
+
+
+
 
