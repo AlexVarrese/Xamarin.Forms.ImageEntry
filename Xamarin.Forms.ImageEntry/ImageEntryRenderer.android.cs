@@ -14,15 +14,18 @@ namespace Xamarin.Forms.ImageEntry
 {
     public class ImageEntryRenderer : EntryRenderer
     {
+        public static Context AppContext { get; set; }
         /// <summary>
         /// Used for registration with dependency service
         /// </summary>
-        public async static void Init()
+        public async static void Init(Context context)
         {
             var temp = DateTime.Now;
+            AppContext = context;
         }
 
         ImageEntry element;
+     
         public ImageEntryRenderer(Context context) : base(context)
         {
 
@@ -56,8 +59,8 @@ namespace Xamarin.Forms.ImageEntry
 
         private BitmapDrawable GetDrawable(string imageEntryImage)
         {
-            int resID = Resources.GetIdentifier(imageEntryImage, "drawable", this.Context.PackageName);
-            var drawable = ContextCompat.GetDrawable(this.Context, resID);
+            int resID = Resources.GetIdentifier(imageEntryImage, "drawable", AppContext.PackageName); // this.Context.PackageName
+            var drawable = ContextCompat.GetDrawable(AppContext, resID);
             var bitmap = ((BitmapDrawable)drawable).Bitmap;
 
             return new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, element.ImageWidth * 2, element.ImageHeight * 2, true));
