@@ -74,5 +74,5 @@ you can use the ImageAlignment tag to set whether the image will appear left or 
 
 ```
 
-
+The complete example can be downloaded here: 
 
