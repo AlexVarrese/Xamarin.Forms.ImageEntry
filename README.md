@@ -51,7 +51,28 @@ Android in MainActivity on OnCreate start control passing the context as paramet
       LoadApplication(new App());
     }
 ```
+in the Xaml file we must declare our control   xmlns:ie="clr-namespace:Xamarin.Forms.ImageEntry;assembly=Xamarin.Forms.ImageEntry", for example . 
 
+Add the images in the project assets folders.
+
+you can use the ImageAlignment tag to set whether the image will appear left or right.
+
+```csharp
+
+  <ie:ImageEntry TextColor="Black" 
+                        PlaceholderColor="Black" 
+                        Image="user" 
+                        Placeholder="User" 
+                        ImageAlignment="Right"
+                        HorizontalOptions="FillAndExpand"/>
+                
+   <ie:ImageEntry TextColor="Black" 
+                        PlaceholderColor="Black" 
+                        Image="password" 
+                        Placeholder="Password" 
+                        HorizontalOptions="FillAndExpand"/>
+
+```
 
 
 
