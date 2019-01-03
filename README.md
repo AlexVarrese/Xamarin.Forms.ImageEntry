@@ -5,6 +5,9 @@ Use images in your entrys
 ###### This is the component, works on iOS, Android.
 
 UWP coming soon
+
+<a href="#">
+<img border="0" src="Resources/sample.png" width="400"   alt="SocialNetworkApp" /></a>
  
  **NuGet**
 
@@ -74,5 +77,5 @@ you can use the ImageAlignment tag to set whether the image will appear left or 
 
 ```
 
-The complete example can be downloaded here: 
+The complete example can be downloaded here: https://github.com/TBertuzzi/Xamarin.Forms.ImageEntry/tree/master/ImageEntrySample
 
